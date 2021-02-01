@@ -42,6 +42,7 @@ def colicSklearn():
     classifier = LogisticRegression(solver='liblinear', max_iter=100).fit(trainingSet, trainingLabels)
     test_accuracy = classifier.score(testSet, testLabels) * 100
     print('正确率:%f%%' % test_accuracy)
+# https://blog.csdn.net/jark_/article/details/78342644
 
 
 if __name__ == '__main__':

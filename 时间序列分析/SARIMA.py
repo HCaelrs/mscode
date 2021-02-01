@@ -10,6 +10,8 @@ import matplotlib.pyplot as plt
 import statsmodels.tsa.api as smt
 
 
+
+
 from itertools import product
 from tqdm import tqdm_notebook
 import statsmodels.api as sm

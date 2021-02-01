@@ -1,0 +1,26 @@
+gaussianNB
+
+fit(X, y)	Fit Gaussian Naive Bayes according to X, y
+get_params([deep])	Get parameters for this estimator.
+predict(X)	Perform classification on an array of test vectors X.
+predict_log_proba(X)	Return log-probability estimates for the test vector X.
+predict_proba(X)	Return probability estimates for the test vector X.
+score(X, y[, sample_weight])	Returns the mean accuracy on the given test data and labels.
+set_params(**params)	Set the parameters of this estimator.
+
+其中预测proba能够预测其中的可能性 其中每一项表示每一个结果的可能性 其中每一项结果的顺序按照其在y中出现的顺序进行确定
+
+如果直接为predict则直接将所有的数据进行查找其最大值将其作为结果
+
+sklearn 需要将所以的数据进行fit之后，再将其结果进行predict 能够predict多种不同的数据的方面
+其中如果带有log则是将概率取对数后进行输出
+
+score则是将其训练出来的模型输入测试集对于其进行测试打分，得到的为其中打分的数量
+
+可以将所有的x进行predict之后和原本的y进行比较来判断其中相同的个数
+
+
+可以用np来判断另个集合中相等的元素的个数
+a = np.array(a)
+b = np.array(b)
+sum(a==b) #个数为84
